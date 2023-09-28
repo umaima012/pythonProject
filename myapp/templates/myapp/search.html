@@ -1,0 +1,19 @@
+{% extends 'myapp/main.html' %}
+{% load static %}
+{% block content %}
+
+<form method="get">
+    {{ form.as_p }}
+    <button type="submit">Search</button>
+</form>
+
+{% if products %}
+<h2>Search Results:</h2>
+<ul>
+    {% for product in products %}
+    <li><a href="{% url 'product_detail' product.price %}">{{ product.name }}</a></li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock content %}

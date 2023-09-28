@@ -1,0 +1,29 @@
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.button-container-div {
+		text-align: center;
+	}
+	.button {
+		position: absolute;
+		top: 50%;
+	}
+
+.button {
+{
+  color: #fff;
+  background-color: #510909;
+  border-color: #0000;
+  border-radius: 24px;
+  }
+    }
+.button:hover{
+background-color:  #510909;
+color: white;
+border-color: #510909;}
+
+
+
+
